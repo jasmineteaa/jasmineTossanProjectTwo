@@ -1,0 +1,17 @@
+@import "./mixin";
+
+header {
+  height: 85vh;
+}
+
+header.blog {
+  @include headerBackground(blogHeader);
+}
+
+header.main {
+  @include headerBackground(headerImage);
+}
+
+header.contact {
+  @include headerBackground(contactHeader);
+}

@@ -1,0 +1,188 @@
+@import "./colorFont";
+@import "./mixin";
+
+
+// ===========================================================
+// home
+// ===========================================================
+
+header.main {
+  position: relative;
+
+  h1 {
+    position: relative;
+  }
+
+  .whatImage {
+    @include absolutePositionTL(-10vh, 0, bottom, right);
+    width: 35%;
+    border: 30px solid $canary;
+    border-right: none;
+  }
+}
+
+.description {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+
+  p {
+    text-align: justify;
+  }
+}
+
+.home h3,
+.home p {
+  margin-bottom: 25px;
+}
+
+
+// ===========================================================
+// skillGear
+// ===========================================================
+
+.skillGear {
+  background: $white;
+  padding: 0;
+}
+
+.skillBox {
+  width: calc(50% - 50px);
+  float: left;
+}
+
+.rights.skillBox {
+  margin-right: 50px;
+}
+
+.lefts.skillBox {
+  margin-left: 50px;
+}
+
+.rights .skillImage {
+  box-shadow: 30px 30px $canary;
+  margin-top: -30px;
+  margin-right: 30px;
+}
+
+.lefts .skillImage {
+  box-shadow: -30px 30px $canary;
+}
+
+.responseShow {
+  display: none;
+}
+
+.skillItem {
+  padding: 100px 0;
+
+  .skillItemText {
+    width: 80%;
+  }
+}
+
+.rights .skillItem {
+  text-align: right;
+
+  .skillItemText {
+    margin-left: 20%;
+
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.lefts .skillItem {
+  margin-left: 30px;
+
+  .skillItemText {
+    margin-right: 20%;
+  }
+}
+
+
+// ===========================================================
+// community
+// ===========================================================
+
+.community .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.communityItem {
+  width: 50%;
+  display: flex;
+
+  .communityText {
+    margin-left: 10px;
+
+    h4 {
+      line-height: 35px;
+    }
+  }
+}
+
+.home svg {
+  border: 2px solid $seaGreen;
+  background: $seaGreen;
+  clip-path: circle(40%);
+  height: 35px;
+  padding: 7px;
+  display: block;
+}
+
+.svg-inline--fa.fa-w-16,
+.svg-inline--fa.fa-w-20,
+.svg-inline--fa.fa-w-14 {
+  width: 35px;
+}
+
+.svg-inline--fa.fa-w-14 {
+  transform: rotate(180deg);
+}
+
+
+// ===========================================================
+// profile 
+// ===========================================================
+
+.profileMain {
+  margin: 50px 0;
+
+  .profileImage {
+    width: 30%;
+    box-shadow: 30px 30px $canary;
+    float: left;
+  }
+}
+
+.profileText {
+  width: calc(70% - 100px);
+  margin-left: 100px;
+  float: left;
+}
+
+
+// ===========================================================
+// gallery
+// ===========================================================
+
+.imgDiv {
+  width: 30%;
+}
+
+.gallery {
+  background: $white;
+}
+
+.imgGallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .copyright {
+  margin-bottom: 0;
+}

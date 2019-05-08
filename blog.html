@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>blog - Captured 🐱‍💻</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i|Roboto" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous">
+  </script>
+</head>
+<body>
+  <div class="outerWrapper">
+    <header class="blog">
+      <div class="wrapper clearfix">
+        <i class="fas fa-bars" aria-hidden="true" aria-label="menu icon"></i>
+        <nav>
+          <li><a href="./index.html">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="./contact.html">contact</a></li>
+        </nav>
+      </div>
+      <h2>blog</h2>
+    </header>
+    <div class="mainContent clearfix">
+      <section class="left">
+        <div class="content wrapper clearfix">
+          <img src="./assets/sideBlogImage.jpg" alt="camera lense floating on open hand.">
+          <div class="about">
+            <h4>about captured</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima, delectus facilis aliquam quas fuga iusto laborum iste eaque blanditiis, assumenda magni eos molestiae quam temporibus quasi voluptates! Nesciunt, labore!</p>
+          </div>
+          <div class="recent">
+            <h4>recent posts</h4>
+            <ul>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+          </div>
+        </div>
+      </section> <!--end of left-->
+    
+      <section class="right">
+        <div class="topImage">
+          <img src="./assets/blogPostImage.jpg" alt="girl taking pictures in flower field." class="flowerField">
+        </div>
+        <div class="mainBelow">
+          <div class="location">
+            <div class="wrapper">
+              <h3>finding great location</h3>
+              <p class="date">Monday May 4th, 2019 by Dieula</p>
+              <p>Curbitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisaue volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapius consequat. Fusce vehibula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut pretium pretium tempor . Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit.  Praesent facillisis dolor sapien, vel sodale augue mollis ut. Mauris veneatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur incidunt sed in felis. Donec elementum, lacus at mattis incidunt, eros magna facibus sem, in condimentum est augue trstique risus. Ut id consectetur magna Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis agestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam</p>
+              </div> <!--end of wrapper-->
+            </div>
+            <div class="comments">
+              <h3>comments:</h3>
+              <div class="person">
+                <div class="personImage">
+                  <img src="./assets/comment1.jpg" alt="boy's face with baseball cap.">
+                </div>
+                <div class="text">
+                  <p class="date">Tuesday October 9th, 2018 by Jeremy</p>
+                  <p class="info">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipusm quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                </div>
+              </div>
+              <div class="person">
+                <div class="personImage">
+                  <img src="./assets/comment2.jpg" alt="blonde girl's smiling face.">
+                </div>
+                <div class="text">
+                  <p class="date">Wednesday October 10th, 2018 by Julia</p>
+                  <p class="info">Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollictudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                </div>
+              </div>
+            </div>
+            <form action="" class="blogForm">
+              <fieldset>
+                <label class="visuallyHidden" for="name">Name</label>
+                <input type="name" id="name" name="name" placeholder="Name">
+                <label class="visuallyHidden" for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Email address">
+              </fieldset>
+              <label class="visuallyHidden" for="comment">Comment</label>
+              <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"  class="comment"></textarea>
+              <input type="submit" value="post comment">
+            </form>
+        </div> <!--end of mainBelow-->
+      </section> <!--end of right-->
+    </div> <!--end of mainContent-->
+    <footer>
+      <p class="copyright">Copyright &copy; 2018 HackerYou</p>
+    </footer>
+  </div> <!--end out outerWrapper-->
+</body>
+</html>

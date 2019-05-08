@@ -1,0 +1,91 @@
+@import "./colorFont";
+@import "./mixin";
+
+
+
+// ===========================================================
+// blog left
+// ===========================================================
+
+.left {
+  @include leftRightPosition(33%);
+
+  img {
+    @include absolutePositionTL(-5px, 0);
+    padding: 50px 50px 0 0;
+  }
+}
+
+.content {
+  background: $white;
+  margin: 1% 40px 0 50px;
+  padding: 70% 10px 30px 30px;
+}
+
+.about p,
+.recent {
+  margin-bottom: 40px;
+}
+
+.recent li {
+  margin-bottom: 6px;
+
+  &::before {
+    content: "\2022";
+    color: $seaGreen;
+    display: inline-block;
+    width: 1em;
+    font-weight: bold;
+  }
+}
+
+
+// ===========================================================
+// blog right
+// ===========================================================
+
+.right {
+  @include leftRightPosition(67%);
+}
+
+.topImage {
+  @include absolutePositionTL(-10%, 25px);
+  box-shadow: -25px 25px $canary;
+}
+
+.mainBelow {
+  margin-top: 31%;
+}
+
+.location {
+  border-left: 3px solid $canary;
+  border-bottom: 3px solid $canary;
+  padding: 30px;
+}
+
+.location .date {
+  margin: 10px 0 40px;
+}
+
+.comments {
+  padding: 30px;
+}
+
+.person {
+  display: flex;
+  padding: 40px 0px;
+
+  .text {
+    margin-left: 15px;
+    width: calc(85% - 15px);
+    line-height: 1.6;
+
+    .date {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.personImage {
+  width: 15%;
+}

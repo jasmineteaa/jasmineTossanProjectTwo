@@ -1,0 +1,61 @@
+@import "./mixin";
+
+
+// ===========================================================
+// form
+// ===========================================================
+
+form {
+  padding: 40px;
+  margin-bottom: 30px;
+
+  fieldset input {
+    border: none;
+    @include inputStyle(none, border-bottom, 10px, 45%);
+  }
+}
+
+input[type="name"] {
+  margin-right: 5%;
+  float: left;
+}
+
+input[type="email"] {
+  margin-left: 5%;
+  float: left;
+}
+
+.comment,
+form>input {
+  margin-top: 40px;
+  font-family: $roboto;
+}
+
+.comment {
+  @include inputStyle(none, border, 10px, 100%);
+  height: 200px;
+}
+
+input[type="submit"] {
+  @include inputStyle($seaGreen, border, 5px, 100%);
+  text-transform: uppercase;
+  font-family: $playFair;
+  @extend %buttonHover;
+}
+
+
+// ===========================================================
+// contact form
+// ===========================================================
+
+form.contactForm {
+  background: $white;
+  @include absolutePositionTL(-25vh, 20px);
+  box-shadow: -25px 25px $canary;
+  width: 100%;
+}
+
+::placeholder {
+  color: $black;
+  opacity: 1;
+}

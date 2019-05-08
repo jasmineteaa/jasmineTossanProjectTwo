@@ -1,0 +1,43 @@
+@import "./colorFont";
+@import "./mixin";
+
+
+// ===========================================================
+// socialContact
+// ===========================================================
+
+.socialContact {
+  margin: 50px 40px 0 50px;
+
+  ul {
+    display: flex;
+    @include pixelToRem(24);
+
+    li {
+      margin-right: 15px;
+    }
+  }
+}
+
+.contact svg {
+  color: $black;
+  @extend %hoverColor;
+}
+
+.email {
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-family: $playFair;
+  text-decoration: none;
+  color: $black;
+  line-height: 1.5;
+  @extend %hoverColor;
+}
+
+.contact.left {
+  padding: 10% 0;
+}
+
+.postal {
+  text-transform: uppercase;
+}

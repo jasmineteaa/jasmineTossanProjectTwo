@@ -1,0 +1,53 @@
+@import "./colorFont";
+
+@mixin pixelToRem($pixel) {
+  font-size: ($pixel/20) * 1rem;
+}
+
+@mixin playFairBoldSize($sizeValue) {
+  font-family: $playFair;
+  font-weight: bold;
+  font-style: italic;
+  @include pixelToRem($sizeValue);
+  text-transform: uppercase;
+}
+
+@mixin leftRightPosition($width) {
+  float: left;
+  position: relative;
+  width: $width;
+}
+
+@mixin absolutePositionTL($topBottomVal, $rightLeftVal, $topBottomProp: top, $rightLeftProp: left) {
+  position: absolute;
+  #{$topBottomProp}: $topBottomVal;
+  #{$rightLeftProp}: $rightLeftVal;
+}
+
+@mixin headerBackground($imgName) {
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../assets/#{$imgName}.jpg);
+}
+
+@mixin inputStyle($background, $borderType, $padding, $width) {
+  background: $background;
+  #{$borderType}: 2px solid $seaGreen;
+  padding: $padding;
+  width: $width;
+}
+
+%buttonHover {
+  transition: opacity 0.5s;
+  opacity: 1;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+%hoverColor {
+  transition: color 0.3s;
+  &:hover {
+    color: $seaGreen;
+  }
+}
