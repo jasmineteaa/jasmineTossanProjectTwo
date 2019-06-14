@@ -18,9 +18,27 @@ nav {
       font-style: italic;
       font-weight: bold;
       transition: all 0.2s;
+      position: relative;
+      &::after{
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: $seaGreen;
+        height: 1px;
+        transition: all 0.5s;
+      }
 
-      &:hover {
-        border-bottom: 5px solid $seaGreen;
+      &:hover,
+      &:focus {
+        color: $seaGreen;
+        &::after{
+          width: 100%;
+        }
       }
     }
   }

@@ -21,3 +21,75 @@ img {
   width: 100%;
   display: block;
 }
+// ===========================================================
+// general styles
+// ===========================================================
+
+html{
+  font-size: 125%;
+}
+body {
+  font-family: $roboto;
+  color: $black;
+  margin: 0 auto;
+}
+.outerWrapper {
+  background: $ice;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+
+}
+
+
+h1{
+  @include playFairBoldSize(100);
+  text-align: center;
+  margin-top: 55vh;
+}
+h2 {
+  @include playFairBoldSize(80);
+  line-height: 92px;
+  text-align: center;
+}
+.blog h2 {
+  padding-top: calc(40vh - 92px);
+}
+.contact h2 {
+  margin-top: calc(45vh - 92px);
+}
+h3{
+  @include playFairBoldSize(42);
+  letter-spacing: 1px;
+}
+h4{
+  @include playFairBoldSize(26);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+nav {
+  @include playFairBoldSize(20);
+}
+p{
+  line-height: 1.5;
+}
+
+button {
+  @include inputStyle($seaGreen, border, 10px 20px, auto);
+  text-transform: uppercase;
+  font-family: $playFair;
+  @extend %buttonHover;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.home .fa-bars,
+.contact .fa-bars,
+.blog .fa-bars {
+  display: none;
+}
